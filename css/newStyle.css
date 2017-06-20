@@ -1,0 +1,267 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+h1 
+{
+	color: #a02829; 
+	width: 20%;
+	text-align: center;
+	padding:5px;
+	margin-top: 20px;
+}
+/*-----------------MENU (NO SE MODIFICA)-----------------------------*/
+header
+{
+	height: 50px;
+	background: #a02829;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+}
+
+.icon-down-open 
+{
+	display: none;
+}
+#btn-menu{
+	display: none;
+}
+header label
+{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.menu ul 
+{
+	background: #a02829;
+	display: flex;
+	list-style: none;
+	
+}
+.menu  li 
+{
+	border-right: 1px solid #fff;
+}
+.menu ul ul 
+{
+	display: none;
+	
+}
+
+.menu a
+{
+	display: block;
+	padding: 15px 25px;
+	text-decoration: none;
+	color: #fff;
+}
+.menu a:hover
+{
+	background: rgba(0,0,0,0.3);
+	
+}
+
+
+.menu ul li:hover ul 
+{
+	display: block;
+	position: absolute;
+}
+
+.c-slider
+{
+	width: 100%;
+	background: #333;
+	height: 600px;
+}
+
+/*-------------------------NUEVO CONTENIDO------------------*/
+
+.historia
+{
+	max-width: 1000px;
+	display: flex;
+	flex-grow: wrap;
+	padding: 20px;
+}
+
+
+.historia p
+{
+	font-size: 17px;
+	padding: 20px;
+}
+
+
+/*---------------------INFORMACION SOCIALES------------------------------*/
+.sociales article
+{
+	width: 80%;
+	padding: 10px;
+}
+.sociales .iconos 
+{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 40px;
+}
+
+.sociales
+{
+	display: flex;
+	margin-top: 20px;
+	background: #EBEBEB;
+	
+}
+.sociales h4
+{
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	
+}
+.sociales p 
+{
+	margin-top: 5px;
+	
+}
+.sociales .correo
+{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 18px;
+}
+
+.sociales .telefonos
+{
+	padding: 20px;
+	font-size: 18px;
+}
+
+
+.sociales .icon-facebook:hover
+{
+	background:#3b5998;
+	
+}
+
+.sociales .icon-twitter:hover
+{
+	background:#00aced;
+}
+.sociales .icon-youtube:hover
+{
+	background: #e52d27;
+}
+
+.InfoBoletin input
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+	padding: 5px;
+	margin-top: 5px;
+}
+.InfoBoletin button
+{
+	background: #a02829;
+	color: #fff;
+	padding: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+/*-------------------------FOOTER----------------------------------------*/
+footer
+{
+	background: #000;
+	color: white;
+	height: 50px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+footer h5
+{
+	padding: 20px;
+	
+}
+
+
+
+/*-------------------MEDIDA DE CELULAR-------------------------------------*/
+@media screen and (max-width:440px)
+{
+	
+	h1
+	{
+		width: 30%;
+	}
+   	header label 
+	{
+		display: block;
+	}
+	.menu 
+	{
+		position:absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		transform: translateX(-100%);
+		transition: all 0.3s;
+		
+	}
+	
+	.menu ul 
+	{
+		display: block;
+	}
+	.menu ul li:hover ul
+	{
+		display: none;
+		position: static;
+	}
+	.menu a span
+	{
+	
+		position: absolute;
+		right: 5px;
+	}
+	.icon-down-open 
+{
+	display: block;
+}
+	#btn-menu:checked ~ .menu 
+	{
+		transform: translateX(0%);
+	}
+	
+	.menu ul ul
+	{
+		background: rgba(0,0,0,0.4);
+	}
+	.menu ul ul a 
+	{
+		padding: 15px 30px ;
+	}
+}
+
+
+
+
+
