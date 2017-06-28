@@ -99,32 +99,22 @@ header label
 }
 
 
-.noticias, .eventos
-{
-	display: flex;
-	margin-top: 20px;
-}
-.noticias article , .eventos article, .sociales article
-{
-	width: 80%;
-	padding: 10px;
-}
-.noticias article img, .eventos article img
+.infoNoticias  img
 {
   	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 }
-.noticias article p , .eventos article p
+.infoNoticias  p 
 {
-	margin-top: 10px;
+	margin-top: 20px;
 	flex-wrap: wrap;
 	justify-content: center;
 	
 }
 
-.noticias article button
+.infoNoticias  button
 {
 	background: #a02829;
 	color: #fff;
@@ -149,72 +139,6 @@ header label
 	height: 600px;
 }
 
-
-
-
-
-.sociales .iconos 
-{
-	
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	cursor: pointer;
-	font-size: 40px;
-	
-	
-}
-
-.sociales
-{
-	display: flex;
-	margin-top: 20px;
-	background: #EBEBEB;
-	
-}
-.sociales h4
-{
-	text-align: center;
-	padding: 10px;
-	font-size: 20px;
-	
-}
-.sociales p 
-{
-	margin-top: 5px;
-	
-}
-.sociales .correo
-{
-	text-align: center;
-	margin-top: 5px;
-	font-size: 18px;
-}
-
-.sociales .telefonos
-{
-	padding: 20px;
-	font-size: 18px;
-}
-
-
-.sociales .icon-facebook:hover
-{
-	background:#3b5998;
-	
-}
-
-.sociales .icon-twitter:hover
-{
-	background:#00aced;
-}
-.sociales .icon-youtube:hover
-{
-	background: #e52d27;
-}
-
-
-
 .contactos
 {
 	width: 100%;
@@ -232,26 +156,6 @@ header label
 }
 
 
-.InfoBoletin input
-{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 8px;
-	padding: 5px;
-	margin-top: 5px;
-}
-.InfoBoletin button
-{
-	background: #a02829;
-	color: #fff;
-	padding: 15px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	cursor: pointer;
-}
 
 
 footer
@@ -272,19 +176,27 @@ footer h5
 .contenedor
 {
 	max-width: 1000px;
-	width: 90%;
+	width: 95%;
 	margin: auto;
 }
-
-.galeria .contenedor
+.sociales
+{
+	background: #ebebeb;
+}
+.galeria .contenedor, .eventos .contenedor, .sociales .contenedor, .noticias .contenedor
 {
 	display: flex;
-	flex-direction:wrap;
-	justify-content: space-between;
+	flex-direction:row;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
-
-.foto
+.grupo img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.foto, .grupo, .InfoSocial, .infoNoticias
 {
 	width: 30%;
 	margin-top: 20px;
@@ -292,7 +204,64 @@ footer h5
 	outline: 5px solid rgba(0,0,0,0);
 	boxshadow:4px 4px 6px rgba(0,0,0,0.9) ;
 }
+.InfoSocial input
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+	padding: 5px;
+	margin-top: 5px;
+}
+.InfoSocial button
+{
+	background: #a02829;
+	color: #fff;
+	padding: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.sociales .iconos 
+{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 40px;
+	
+	
+}
+.sociales .icon-facebook:hover
+{
+	background:#3b5998;
+	
+}
 
+.sociales .icon-twitter:hover
+{
+	background:#00aced;
+}
+.sociales .icon-youtube:hover
+{
+	background: #e52d27;
+}
+
+.sociales h4
+{
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	
+}
+.sociales p 
+{
+	margin-top: 5px;
+	
+}
 .foto img 
 {
 	width: 100%;
@@ -303,7 +272,7 @@ footer h5
 {
 	h1
 	{
-		width: 30%;
+		width: 40%;
 	}
    	header label 
 	{
@@ -351,11 +320,15 @@ footer h5
 	{
 		padding: 15px 30px ;
 	}
-	.galeria .contenedor
+	.galeria .contenedor, .eventos .contenedor, .sociales .contenedor, .noticias .contenedor
 	{
 	 flex-direction: column;
 	}
-	.foto
+	.InfoSocial h4, .InfoSocial p
+	{
+		text-align: center;
+	}
+	.foto, .grupo, .InfoSocial, .infoNoticias
 	{
 		width: 90%;
 		margin: auto;

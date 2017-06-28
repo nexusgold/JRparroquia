@@ -25,6 +25,7 @@ header
 	justify-content: center;	
 }
 
+
 .icon-down-open 
 {
 	display: none;
@@ -84,15 +85,14 @@ header label
 }
 
 /*-------------------------NUEVO CONTENIDO------------------*/
-
-.historia
+.Ambientes h1 
 {
-	max-width: 1000px;
-	display: flex;
-	flex-grow: wrap;
-	padding: 20px;
+	color: #a02829; 
+	width: 35%;
+	text-align: center;
+	padding:5px;
+	margin-top: 20px;
 }
-
 
 .historia p
 {
@@ -100,12 +100,67 @@ header label
 	padding: 20px;
 }
 
+ .infoCapilla, .infoAmbientes
+{
+	max-width: 1000px;
+	width: 90%;
+	padding:5px;
+	margin: 15px auto;
+}
+
+
 
 /*---------------------INFORMACION SOCIALES------------------------------*/
-.sociales article
+.contenedor
 {
-	width: 80%;
-	padding: 10px;
+	max-width: 1000px;
+	width: 95%;
+	margin: auto;
+}
+
+.sociales .contenedor, .historia .contenedor, .NuestroParroco .contenedor, .NuestroVicario .contenedor	
+{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.articulo, .infoParroco , .infoVicario 
+{
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.InfoSocial
+
+{
+	width: 30%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	outline: 5px solid rgba(0,0,0,0);
+	boxshadow:4px 4px 6px rgba(0,0,0,0.9);
+}
+.InfoSocial input
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+	padding: 5px;
+	margin-top: 5px;
+}
+.InfoSocial button
+{
+	background: #a02829;
+	color: #fff;
+	padding: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	cursor: pointer;
 }
 .sociales .iconos 
 {
@@ -115,41 +170,8 @@ header label
 	justify-content: center;
 	cursor: pointer;
 	font-size: 40px;
-}
-
-.sociales
-{
-	display: flex;
-	margin-top: 20px;
-	background: #EBEBEB;
 	
 }
-.sociales h4
-{
-	text-align: center;
-	padding: 10px;
-	font-size: 20px;
-	
-}
-.sociales p 
-{
-	margin-top: 5px;
-	
-}
-.sociales .correo
-{
-	text-align: center;
-	margin-top: 5px;
-	font-size: 18px;
-}
-
-.sociales .telefonos
-{
-	padding: 20px;
-	font-size: 18px;
-}
-
-
 .sociales .icon-facebook:hover
 {
 	background:#3b5998;
@@ -164,26 +186,21 @@ header label
 {
 	background: #e52d27;
 }
-
-.InfoBoletin input
+.sociales
 {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 8px;
-	padding: 5px;
-	margin-top: 5px;
+	background: #ebebeb;
 }
-.InfoBoletin button
+.sociales h4
 {
-	background: #a02829;
-	color: #fff;
-	padding: 15px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	cursor: pointer;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	
+}
+.sociales p 
+{
+	margin-top: 5px;
+	
 }
 
 /*-------------------------FOOTER----------------------------------------*/
@@ -207,10 +224,14 @@ footer h5
 /*-------------------MEDIDA DE CELULAR-------------------------------------*/
 @media screen and (max-width:440px)
 {
+	.Ambientes h1
+	{
+		width:90%;
+	}
 	
 	h1
 	{
-		width: 30%;
+		width: 40%;
 	}
    	header label 
 	{
@@ -219,12 +240,11 @@ footer h5
 	.menu 
 	{
 		position:absolute;
-		top: 50px;
+		top:50px;
 		left: 0;
 		width: 100%;
 		transform: translateX(-100%);
 		transition: all 0.3s;
-		
 	}
 	
 	.menu ul 
@@ -257,9 +277,34 @@ footer h5
 	}
 	.menu ul ul a 
 	{
-		padding: 15px 30px ;
+		padding: 15px 30px;
 	}
+	.c-slider
+	{
+		background-size: cover;
+	}
+	
+	.historia .contenedor, .sociales .contenedor, .NuestroParroco .contenedor, .NuestroVicario .contenedor
+	{
+	 flex-direction: column;
+	}
+	.InfoSocial h4, .InfoSocial p
+	{
+		text-align: center;
+	}
+	
+	
+	.articulo, .infoParroco, .infoVicario, .InfoSocial
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		
+	}
+	
 }
+
 
 
 
