@@ -1,18 +1,21 @@
+/*margin px*/
+/*arriba - derecho - abajo - izquierdo */
 *
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
+    
+	
+	
 }
 
 h1 
 {
 	color: #a02829; 
-	width: 20%;
-	text-align: center;
-	padding:5px;
-	margin-top: 20px;
+	width: 50%;
+	padding: 5px;
+	margin: 30px 35px 30px 35px;
 }
 /*-----------------MENU (NO SE MODIFICA)-----------------------------*/
 header
@@ -108,6 +111,57 @@ header label
 	margin: 15px auto;
 }
 
+.infoPastoral
+{
+	max-width: 2000px;
+	width: 90%;
+	margin: 20px 50px 20px 50px; /*arriba - derecho - abajo - izquierdo */
+}
+.infoPastoral ol, .infoPastoral ul 
+{
+	margin: 10px 20px 10px 20px;
+}
+
+.acordeon
+{
+	max-width: 2000px;
+	width: 90%;
+	margin: auto;
+}
+.acordeon input
+{
+	display: none;
+}
+.acordeon__titulo
+{
+	display: block;
+	padding: 15px;
+	background: #a02829;
+	color: #fff; 
+	font-size: 20px;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+}
+.acordeon__titulo:hover
+{
+	background: rgba(201,50,52,0.9);
+
+}
+.acordeon__contenido
+{
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+	transition: all 0.5s;
+}
+
+.acordeon input:checked ~ .acordeon__contenido
+{
+	height: auto;
+	margin: 15px 0px;
+}
+
+
 
 
 /*---------------------INFORMACION SOCIALES------------------------------*/
@@ -142,6 +196,8 @@ header label
 	outline: 5px solid rgba(0,0,0,0);
 	boxshadow:4px 4px 6px rgba(0,0,0,0.9);
 }
+
+
 .InfoSocial input
 {
 	display: block;
@@ -174,17 +230,17 @@ header label
 }
 .sociales .icon-facebook:hover
 {
-	background:#3b5998;
+	color:#3b5998;
 	
 }
 
 .sociales .icon-twitter:hover
 {
-	background:#00aced;
+	color:#00aced;
 }
 .sociales .icon-youtube:hover
 {
-	background: #e52d27;
+	color: #e52d27;
 }
 .sociales
 {
@@ -202,6 +258,7 @@ header label
 	margin-top: 5px;
 	
 }
+
 
 /*-------------------------FOOTER----------------------------------------*/
 footer
@@ -294,7 +351,7 @@ footer h5
 	}
 	
 	
-	.articulo, .infoParroco, .infoVicario, .InfoSocial
+	.articulo, .infoParroco, .infoVicario, .InfoSocial, .infoAmbientes
 	{
 		display: block;
 		margin-left: auto;

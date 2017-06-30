@@ -106,7 +106,7 @@ header label
 	margin-right: auto;
 	margin-top: 10px;
 }
-.infoNoticias  p 
+.infoNoticias  p , .eventos p
 {
 	margin-top: 20px;
 	flex-wrap: wrap;
